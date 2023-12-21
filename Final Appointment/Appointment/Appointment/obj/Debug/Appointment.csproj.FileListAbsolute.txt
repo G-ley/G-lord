@@ -1,0 +1,17 @@
+D:\New folder\Appointment\Appointment\bin\Debug\Appointment.exe.config
+D:\New folder\Appointment\Appointment\bin\Debug\Appointment.exe
+D:\New folder\Appointment\Appointment\bin\Debug\Appointment.pdb
+D:\New folder\Appointment\Appointment\bin\Debug\EntityFramework.dll
+D:\New folder\Appointment\Appointment\bin\Debug\EntityFramework.SqlServer.dll
+D:\New folder\Appointment\Appointment\bin\Debug\EntityFramework.xml
+D:\New folder\Appointment\Appointment\bin\Debug\EntityFramework.SqlServer.xml
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.csproj.AssemblyReference.cache
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.Client.resources
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.Form1.resources
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.Properties.Resources.resources
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.register.resources
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.csproj.GenerateResource.cache
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.csproj.CoreCompileInputs.cache
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.csproj.CopyComplete
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.exe
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.pdb
