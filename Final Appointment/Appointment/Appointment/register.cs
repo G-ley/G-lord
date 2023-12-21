@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace Appointment
 {
     public partial class register : Form
@@ -28,11 +27,12 @@ namespace Appointment
         private void btnconfirm_Click(object sender, EventArgs e)
         {
             Users newUsers = new Users();
-            newUsers. firstName = txtName.Text;
-            newUsers. lastName = txtLname.Text;
-            newUsers. UserAddress = txtAddress.Text;
-            newUsers. UserPassword= txtpass.Text;
-            newUsers. UserRole = cmbrole.SelectedItem.ToString();
+            newUsers.firstName = txtName.Text;
+            newUsers.lastName = txtLname.Text;
+            newUsers.Username = txtuserName.Text;
+            newUsers.UserAddress = txtAddress.Text;
+            newUsers.UserPassword= txtpass.Text;
+            newUsers.UserRole = cmbrole.SelectedItem.ToString();
 
 
             db.Users.Add(newUsers);
@@ -40,24 +40,24 @@ namespace Appointment
 
             txtName.Clear();
             txtLname.Clear();
+            txtuserName.Clear();
             txtAddress.Clear();
             txtpass.Clear();
             MessageBox.Show("Registered!");
 
         }
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void register_Load(object sender, EventArgs e)
         {
 
         }
-
         private void cmbrole_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

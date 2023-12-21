@@ -61,6 +61,16 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="appointmentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appointmentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="appointmentDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appointmentDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Client.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +83,7 @@
     <Compile Include="dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="db.cs" />
     <Compile Include="dbmodel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -93,6 +104,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newcustomer.Designer.cs">
+      <DependentUpon>newcustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,6 +137,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="newcustomer.resx">
+      <DependentUpon>newcustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -136,6 +156,28 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>dbmodel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="appointmentDataSet.xsc">
+      <DependentUpon>appointmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="appointmentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>appointmentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="appointmentDataSet.xss">
+      <DependentUpon>appointmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="appointmentDataSet1.xsc">
+      <DependentUpon>appointmentDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="appointmentDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>appointmentDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="appointmentDataSet1.xss">
+      <DependentUpon>appointmentDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="dbmodel.edmx.diagram">
       <DependentUpon>dbmodel.edmx</DependentUpon>
     </None>

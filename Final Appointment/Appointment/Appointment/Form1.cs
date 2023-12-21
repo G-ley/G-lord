@@ -31,14 +31,14 @@ namespace Appointment
         }
 
         private void btnclear_Click(object sender, EventArgs e)
-        {
+        { 
             register reg = new register();
             reg.ShowDialog();
         }
 
         private void btnSignup_Click(object sender, EventArgs e)
-        {
-         string username = TxtName.Text;
+        { 
+            string username = TxtName.Text;
             string password = TxtPass.Text;
 
             var user = db.Users.FirstOrDefault(u => u.Username == username && u.UserPassword == password);
@@ -73,7 +73,10 @@ namespace Appointment
             {
                 MessageBox.Show("Login failed. Invalid username or password.");
             }
+            dashboard dh = new dashboard();
+            dh.ShowDialog();
         }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {

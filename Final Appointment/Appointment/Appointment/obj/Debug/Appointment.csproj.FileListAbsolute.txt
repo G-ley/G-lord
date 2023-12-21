@@ -15,3 +15,5 @@ D:\New folder\Appointment\Appointment\obj\Debug\Appointment.csproj.CoreCompileIn
 D:\New folder\Appointment\Appointment\obj\Debug\Appointment.csproj.CopyComplete
 D:\New folder\Appointment\Appointment\obj\Debug\Appointment.exe
 D:\New folder\Appointment\Appointment\obj\Debug\Appointment.pdb
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.dashboard.resources
+D:\New folder\Appointment\Appointment\obj\Debug\Appointment.newcustomer.resources

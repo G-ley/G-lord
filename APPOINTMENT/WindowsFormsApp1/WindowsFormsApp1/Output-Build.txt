@@ -1,4 +1,0 @@
-﻿Build started...
-1>------ Build started: Project: WindowsFormsApp1, Configuration: Debug Any CPU ------
-1>D:\APPOINTMENT\WindowsFormsApp1\WindowsFormsApp1\Form1.cs(37,13,37,24): error CS0103: The name 'application' does not exist in the current context
-========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
