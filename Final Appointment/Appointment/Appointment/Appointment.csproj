@@ -99,6 +99,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbmodel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Dshboard.cs">
+      <DependentUpon>dbmodel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

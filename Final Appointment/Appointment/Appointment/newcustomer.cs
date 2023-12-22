@@ -14,11 +14,12 @@ namespace Appointment
 {
     public partial class newcustomer : Form
     {
-        SqlConnection cn = new SqlConnection(db.cn);
-        SqlCommand cm;
+        appointmentEntities db;
         public newcustomer()
         {
             InitializeComponent();
+            db = new appointmentEntities();
+           
         }
 
         private void newcustomer_Load(object sender, EventArgs e)
@@ -28,21 +29,20 @@ namespace Appointment
 
         private void btnconfirm_Click(object sender, EventArgs e)
         {
-            cn.Open();
-            cm = new SqlCommand("insert into dashboard (ClientName, UserId, UserPhone) values (@ClientName, @UserId, @UserPhone)", cn);
-            cm.Parameters.AddWithValue("@ClientName", TxtName.Text);
-            cm.Parameters.AddWithValue("@UserId", TxtId.Text);
-            cm.Parameters.AddWithValue("@userPhone", Txtphone.Text);
-            cm.ExecuteNonQuery();
-            cn.Close();
-            foreach (Control c in this.Controls)
-            {
-                if (c is TextBox)
-                {
-                    c.Text = "";
-                }
-            }
-            MessageBox.Show("Record has been saved successfully");
+            Dshboard newDshboard = new Dshboard();
+            newDshboard.ClientId = TxtId.Text;
+            newDshboard.ClientName = TxtName.Text;
+            newDshboard.ClientPhone = Txtphone.Text;
+           
+            db.Dshboard.Add(newDshboard);
+            db.SaveChanges();
+
+
+            TxtId.Clear();
+            TxtName.Clear();
+            Txtphone.Clear();
+            MessageBox.Show("you have been successfully set a appointment!");
+
         }
 
         private void Name_Click(object sender, EventArgs e)

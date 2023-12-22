@@ -29,27 +29,25 @@ namespace Appointment
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.btnNCustomer = new System.Windows.Forms.Button();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.appointmentDataSet1 = new Appointment.appointmentDataSet1();
+            this.dashboardBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dashboardTableAdapter = new Appointment.appointmentDataSet1TableAdapters.dashboardTableAdapter();
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.AutoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.appointmentDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.lbl3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnNCustomer);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -87,97 +85,47 @@ namespace Appointment
             this.btnNCustomer.UseVisualStyleBackColor = false;
             this.btnNCustomer.Click += new System.EventHandler(this.btn2_Click);
             // 
+            // lbl3
+            // 
+            this.lbl3.AutoSize = true;
+            this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl3.Location = new System.Drawing.Point(3, 12);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(93, 39);
+            this.lbl3.TabIndex = 9;
+            this.lbl3.Text = "Time";
+            this.lbl3.Click += new System.EventHandler(this.lbl3_Click);
+            // 
+            // appointmentDataSet1
+            // 
+            this.appointmentDataSet1.DataSetName = "appointmentDataSet1";
+            this.appointmentDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dashboardBindingSource
+            // 
+            this.dashboardBindingSource.DataMember = "dashboard";
+            this.dashboardBindingSource.DataSource = this.appointmentDataSet1;
+            // 
+            // dashboardTableAdapter
+            // 
+            this.dashboardTableAdapter.ClearBeforeFill = true;
+            // 
             // dgv
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.AutoID,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8});
-            this.dgv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv.EnableHeadersVisualStyles = false;
-            this.dgv.Location = new System.Drawing.Point(0, 62);
+            this.dgv.Location = new System.Drawing.Point(97, 85);
             this.dgv.Name = "dgv";
-            this.dgv.RowHeadersVisible = false;
-            this.dgv.Size = new System.Drawing.Size(610, 398);
+            this.dgv.Size = new System.Drawing.Size(399, 313);
             this.dgv.TabIndex = 2;
-            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
-            // 
-            // AutoID
-            // 
-            this.AutoID.HeaderText = "";
-            this.AutoID.Name = "AutoID";
-            this.AutoID.Visible = false;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "#";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 39;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Customer Name";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Customer Id";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Customer Phone";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Customer lmate";
-            this.Column5.Name = "Column5";
-            this.Column5.Visible = false;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Customer appointment";
-            this.Column6.Name = "Column6";
-            this.Column6.Visible = false;
-            // 
-            // Column7
-            // 
-            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column7.HeaderText = "Edit";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 31;
-            // 
-            // Column8
-            // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column8.HeaderText = "Delete";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 44;
+            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(610, 460);
+            this.ClientSize = new System.Drawing.Size(610, 461);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -185,6 +133,9 @@ namespace Appointment
             this.Text = "dashboard";
             this.Load += new System.EventHandler(this.dashboard_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.appointmentDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
 
@@ -194,15 +145,10 @@ namespace Appointment
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnNCustomer;
+        private System.Windows.Forms.Label lbl3;
+        private appointmentDataSet1 appointmentDataSet1;
+        private System.Windows.Forms.BindingSource dashboardBindingSource;
+        private appointmentDataSet1TableAdapters.dashboardTableAdapter dashboardTableAdapter;
         private System.Windows.Forms.DataGridView dgv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AutoID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewButtonColumn Column6;
-        private System.Windows.Forms.DataGridViewButtonColumn Column7;
-        private System.Windows.Forms.DataGridViewButtonColumn Column8;
     }
 }

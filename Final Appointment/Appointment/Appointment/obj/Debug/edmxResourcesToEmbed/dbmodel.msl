@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="appointmentModelStoreContainer" CdmEntityContainer="appointmentEntities">
+    <EntitySetMapping Name="Dshboard">
+      <EntityTypeMapping TypeName="appointmentModel.Dshboard">
+        <MappingFragment StoreEntitySet="Dshboard">
+          <ScalarProperty Name="ClientPhone" ColumnName="ClientPhone" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="appointmentModel.Users">
         <MappingFragment StoreEntitySet="Users">

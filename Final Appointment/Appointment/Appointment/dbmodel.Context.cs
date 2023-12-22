@@ -25,6 +25,7 @@ namespace Appointment
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Dshboard> Dshboard { get; set; }
         public virtual DbSet<Users> Users { get; set; }
     }
 }

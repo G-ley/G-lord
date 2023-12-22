@@ -54,14 +54,6 @@ namespace Appointment
             Name.TabIndex = 16;
             Name.Text = "Name:";
             // 
-            // TxtName
-            // 
-            this.TxtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtName.Location = new System.Drawing.Point(236, 163);
-            this.TxtName.Name = "TxtName";
-            this.TxtName.Size = new System.Drawing.Size(243, 23);
-            this.TxtName.TabIndex = 17;
-            // 
             // customer_IDLabel
             // 
             customer_IDLabel.AutoSize = true;
@@ -72,6 +64,14 @@ namespace Appointment
             customer_IDLabel.TabIndex = 18;
             customer_IDLabel.Text = "Password:";
             customer_IDLabel.Click += new System.EventHandler(this.customer_IDLabel_Click);
+            // 
+            // TxtName
+            // 
+            this.TxtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtName.Location = new System.Drawing.Point(236, 163);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(243, 23);
+            this.TxtName.TabIndex = 17;
             // 
             // TxtPass
             // 

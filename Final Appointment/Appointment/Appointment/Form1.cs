@@ -67,6 +67,7 @@ namespace Appointment
                     default:
                         MessageBox.Show("User has no role!");
                         break;
+
                 }
             }
             else
